@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TOP: Sign Up Form</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <main>
+            <div class="wrapper">
+                <div class="sidebar">
+                    <div class="logo">
+                        <img src="./assets/images/odin-lined.png" alt="odin project logo">
+                        <h1 class="logo-heading">ODIN</h1>
+                    </div>
+                    <div class="credit">
+                        <p>Photo by <a href="https://unsplash.com/photos/body-of-water-under-clear-blue-sky-sYzFIusQp3Q" target="_blank">Greg Becker </a>on <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+                    </div>
+                </div>
+                <div class="sign-up-form">
+                    <div class="form-heading">
+                        <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
+                        <br>
+                        <h2>You <em>know</em> you want to.</h2>
+                    </div>
+                    <div class="form">
+                        <form action="/form-handler/" method="post">
+                            <div class="form-section">
+                                <h2>Let's do this!</h2>
+                                <div class="first-name">
+                                    <label for="first_name">First Name
+                                        <input type="text" name="f-name" id="first_name" autocomplete="name" minlength="1" pattern="[a-zA-Z]+" placeholder="Thor" required>
+                                    </label>
+                                </div>
+                                <div class="last-name">
+                                    <label for="last_name">Last Name
+                                        <input type="text" name="l-name" id="last_name" autocomplete="name" minlength="1" pattern="[a-zA-Z]+" placeholder="Odinson" required>
+                                    </label>
+                                </div>
+                                <div class="email">
+                                    <label for="email">Email
+                                        <input type="email" name="email" id="email" autocomplete="email" minlength="5" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="thor@yourdomain.com" required>
+                                    </label>
+                                </div>
+                                <div class="telephone">
+                                    <label for="telephone_number">Phone Number
+                                        <input type="tel" name="tel-num" id="telephone_number" pattern="^(\d{3}[-.\s]?)?\d{3}[-.\s]?\d{4}$" placeholder="123-456-7890" required>
+                                    </label>
+                                </div>
+                                <div class="password">
+                                    <label for="user-password">Password
+                                        <input type="password" name="password" id="user-password" autocomplete="new-password" minlength="6" pattern="[A-Za-z0-9_]{6,15}" required>
+                                    </label>
+                                </div>
+                                <div class="confirm-password">
+                                    <label for="user-confirm-password">Confirm Password
+                                        <input type="password" name="confirm_password" id="user-confirm-password" autocomplete="new-password" minlength="6" pattern="[A-Za-z0-9_]{6,15}" required>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="account-info">
+                                <button type="submit">Create Account</button>
+                                <h3>Already have an account? <a href="#">Log in</a></h3>
+                            </div>
+                        </form>                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
