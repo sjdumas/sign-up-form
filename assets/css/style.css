@@ -69,7 +69,11 @@ h6 {
 }
 
 h2 {
-	font-size: 1.65rem;
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.1rem;
 }
 
 a {
@@ -220,7 +224,7 @@ input:focus-visible {
 button {
 	cursor: pointer;
 	font-weight: 500;
-	font-size: 1.25rem;
+	font-size: 1.1rem;
 	background-color: var(--button-bg-color);
 	color: var(--button-font-color);
 	padding: 15px 50px;
